@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import datos from "../assets/all_product";
+import datos from "../assets/all_tiendas";
 import sinImagen from "../assets/Productos/sin_imagen.png";
 
 import {

@@ -40,7 +40,7 @@ function Cards({ data, titulo }) {
                   <CardMedia
                     component="img"
                     alt={producto.nombre}
-                    src={imagenes[index] ? imagenes[index].imagen : sinImagen}
+                    src={producto.imagen ? producto.imagen : sinImagen}
                   />
                   <CardContent>
                     <Typography variant="h6">{producto.nombre}</Typography>

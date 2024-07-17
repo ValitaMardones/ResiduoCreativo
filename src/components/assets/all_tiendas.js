@@ -8,6 +8,8 @@ let all_tiendas = [
     facebook: "@amistar_cl",
     telefono: 12345678,
     direccion: "direccion 1",
+    comuna: "Ñuñoa",
+    Emprendedor: "Valeska Lama",
     fechaCreacion: "2024-06-24T19:43:47.714359",
   },
   {
@@ -19,6 +21,8 @@ let all_tiendas = [
     facebook: "@cg_cosmeticanatural",
     telefono: 12345678,
     direccion: "direccion 2",
+    comuna: "Ñuñoa",
+    nombreEmprendedor: "Camila Diaz",
     fechaCreacion: "2024-06-24T19:45:55.935837",
   },
   {
@@ -30,6 +34,8 @@ let all_tiendas = [
     facebook: "@ecoasis.recicla",
     telefono: 12345678,
     direccion: "direccion 3",
+    comuna: "Ñuñoa",
+    nombreEmprendedor: "Marilyn TorreAlba",
     fechaCreacion: "2024-06-24T19:49:10.420073",
   },
 ];

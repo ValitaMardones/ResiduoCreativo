@@ -18,7 +18,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
     product.nombre.toLowerCase().includes(filter.toLowerCase())
   );
   const handleSelectFilterProduct = (id) => {
-    navigate(`/producto/${id}`);
+    navigate(`ResiduoCreativo/producto/${id}`);
     console.log(id);
   };
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
             </li>
             <li className="nav_menu_item">
               <Link
-                to="/tiendas"
+                to="ResiduoCreativo/tiendas"
                 style={{ textDecoration: "none" }}
                 className="nav_menu_link"
               >
@@ -52,7 +52,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
             </li>
             <li className="nav_menu_item">
               <Link
-                to="/nosotros"
+                to="ResiduoCreativo/nosotros"
                 style={{ textDecoration: "none" }}
                 className="nav_menu_link"
               >
@@ -101,7 +101,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
 
         <div className="nav_usuario">
           <div className="nav_usuario_icon">
-            <Link className="nav_usuario_icon" to="/cuenta">
+            <Link className="nav_usuario_icon" to="ResiduoCreativo/cuenta">
               <img src={usuario} alt="icono usuario" />
             </Link>
           </div>
@@ -110,12 +110,18 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
               <h2>Hola! {emprendedor}</h2>
             </div>
             <div className="nav_usuario_ingreso">
-              <Link to="/inicio-de-sesion" style={{ textDecoration: "none" }}>
+              <Link
+                to="ResiduoCreativo/inicio-de-sesion"
+                style={{ textDecoration: "none" }}
+              >
                 Inicia Sesion
               </Link>
             </div>
             <div className="nav_usuario_registro">
-              <Link to="/registro-usuario" style={{ textDecoration: "none" }}>
+              <Link
+                to="ResiduoCreativo/registro-usuario"
+                style={{ textDecoration: "none" }}
+              >
                 Registrate
               </Link>
             </div>

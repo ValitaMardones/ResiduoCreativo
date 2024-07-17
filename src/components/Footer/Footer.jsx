@@ -14,7 +14,7 @@ function Footer({ nosotros, contacto, preguntas }) {
           <div className="sb__footer-links-div">
             <h4>Acerca de Residuo Creativo</h4>
             <Link
-              to="/nosotros"
+              to="/ResiduoCreativo/nosotros"
               style={{ textDecoration: "none" }}
               className="a"
             >
@@ -25,7 +25,7 @@ function Footer({ nosotros, contacto, preguntas }) {
             <h4>¿Necesitas ayuda?</h4>
 
             <Link
-              to="/contacto"
+              to="/ResiduoCreativo/contacto"
               style={{ textDecoration: "none" }}
               className="a"
             >
@@ -33,7 +33,7 @@ function Footer({ nosotros, contacto, preguntas }) {
             </Link>
 
             <Link
-              to="/preguntas-frecuentes"
+              to="/ResiduoCreativo/preguntas-frecuentes"
               style={{ textDecoration: "none" }}
               className="a"
             >
@@ -43,7 +43,11 @@ function Footer({ nosotros, contacto, preguntas }) {
           <div className="sb__footer-links-div">
             <h4>Medios de pago</h4>
 
-            <Link to="/pagos" style={{ textDecoration: "none" }} className="a">
+            <Link
+              to="/ResiduoCreativo/pagos"
+              style={{ textDecoration: "none" }}
+              className="a"
+            >
               <p>Revisa los medios de pago disponibles</p>
             </Link>
           </div>

@@ -15,7 +15,7 @@ function Emprendedor() {
         <div className="emprendedor_tienda">
           <BannerEmprendedor />
           <Link
-            to="/registrar-tienda"
+            to="/ResiduoCreativo/registrar-tienda"
             style={{ textDecoration: "none" }}
             className="btn_tienda"
           >
@@ -34,7 +34,7 @@ function Emprendedor() {
 
           <Link
             className="btn btn_Registroproducto"
-            to="/registro-producto"
+            to="/ResiduoCreativo/registro-producto"
             style={{ textDecoration: "none" }}
           >
             <button>Empezar a vender</button>

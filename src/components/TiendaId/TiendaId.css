@@ -1,31 +1,31 @@
 .contenedor_tiendaId_item {
-  margin: 20px auto;
-  height: 70vh;
+  height: auto;
   width: 100%;
+  margin: 0;
+}
+
+.cardPresentacion {
+  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0 30px;
+  margin: 20px 0;
 }
 
-.contenedor_tiendaId_item > img {
+.imagenFondo {
   object-fit: cover;
-  height: 70vh;
-}
-
-.contenedor_imagen > img {
-  max-width: 100%;
+  height: 400px;
 }
 
 .contenedor_tiendaId_texto {
   width: 50%;
-  height: 60%;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   background-color: #f1e8d790;
+  top: 20px;
 }
 
 .tiendaID_titulo,
@@ -34,12 +34,18 @@
 .tiendaID_precio,
 .tiendaID_telefono,
 .tiendaID_instagram,
-.tiendaID_facebook {
+.tiendaID_facebook,
+.tiendaID_ubicacion,
+.tiendaID_emprendedor {
   margin: 0 50px;
   font-family: var(--font-parrafos);
   font-weight: 500;
   color: var(--font-color-oscuro);
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.tiendaID_titulo {
+  font-size: 20px;
 }
 
 .tiendaID_nombre {
@@ -50,16 +56,15 @@
   height: 80px;
   display: flex;
   align-items: center;
-  margin: -30px 30px 15px 30px;
+  margin: -80px 30px 20px 30px;
 }
 
 .tiendaID_detalle {
-  margin: 25px 0;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10%;
+  gap: 8px;
 }
 
 .tiendaID_titulo {
@@ -68,6 +73,10 @@
 
 .tiendaID_descripcion {
   font-size: 16px;
+}
+
+.Cards {
+  position: absolute;
 }
 
 @media screen and (max-width: 800px) {

@@ -15,7 +15,7 @@ import clp from "../Clp";
 
 function Cards({ data, titulo }) {
   const handleDivClick = (key) => {
-    navigate(`/producto/${key}`);
+    navigate(`/ResiduoCreativo/producto/${key}`);
   };
   const navigate = useNavigate();
   return (
@@ -56,7 +56,7 @@ function Cards({ data, titulo }) {
                       {clp(producto.precio)}
                     </Typography>
                   </CardActions>
-                  <Link to={`/producto/${producto.id}`}></Link>
+                  <Link to={`/ResiduoCreativo/producto/${producto.id}`}></Link>
                 </Card>
               </Grid>
             ))

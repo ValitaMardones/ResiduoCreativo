@@ -48,7 +48,18 @@
   font-family: var(--font-titulos);
   color: var(--font-color-oscuro);
   font-size: 36px;
-  margin: 0 0 90px 0;
+  position: relative;
+  top: 0;
+  height: 200px;
+}
+
+.item_categoria {
+  position: relative;
+  top: 0;
+  height: 280px;
+  font-family: var(--font-parrafos);
+  font-weight: 800;
+  color: var(--font-color-oscuro);
 }
 
 .item_detalle {
@@ -56,12 +67,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  height: 100px;
+  height: auto;
+  position: relative;
+}
+
+.item_tienda {
+  font-family: var(--font-parrafos);
+  font-weight: 800;
+  color: var(--font-color-oscuro);
+  position: relative;
+  top: 0;
+  height: 50px;
+  width: 200px;
 }
 
 .item_titulo {
   font-size: 18px;
   font-weight: 800;
+}
+
+.item_categoria {
+  font-size: 16px;
 }
 
 .item_descripcion {

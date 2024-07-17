@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Productos.css";
 import data from "../assets/all_product";
 import clp from "../Clp";
@@ -21,13 +22,20 @@ function Productos({ id }) {
 
         <div className="contenedor_item_texto">
           <h2 className="item_nombre">{itemProducto.nombre}</h2>
+          <p className="item_categoria">Categoria: {itemProducto.categoria}</p>
           <div className="item_detalle">
             <p className="item_titulo">Descripcion del producto:</p>
             <p className="item_descripcion">{itemProducto.descripcion}</p>
+            <Link
+              className="item_tienda"
+              to={`/ResiduoCreativo/tienda/${itemProducto.idTienda}`}
+            >
+              Tienda: {itemProducto.tienda}
+            </Link>
           </div>
           <div className="item_precio">{clp(itemProducto.precio)}</div>
           <div className="item_stock">
-            {itemProducto.stock} unidades disponibles
+            {itemProducto.cantidad} unidades disponibles
           </div>
         </div>
       </div>

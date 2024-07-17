@@ -13,7 +13,7 @@ import {
 
 function CardTienda({ data, titulo }) {
   const handleDivClick = (key) => {
-    navigate(`/tienda/${key}`);
+    navigate(`/ResiduoCreativo/tienda/${key}`);
   };
   const navigate = useNavigate();
   return (
@@ -57,7 +57,7 @@ function CardTienda({ data, titulo }) {
                       {tienda.descripcion}
                     </Typography>
                   </CardActions>
-                  <Link to={`/tienda/${tienda.id}`}></Link>
+                  <Link to={`/ResiduoCreativo/tienda/${tienda.id}`}></Link>
                 </Card>
               </Grid>
             ))

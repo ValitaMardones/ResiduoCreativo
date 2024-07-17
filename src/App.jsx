@@ -38,28 +38,46 @@ function App() {
         <Container>
           <Routes>
             <Route path="/ResiduoCreativo" element={<HomeGeneral />}></Route>
-            <Route path="/tiendas" element={<Tiendas />}></Route>
-            <Route path="/nosotros" element={<Nosotros />}></Route>
-            <Route path="/inicio-de-sesion" element={<InicioSesion />}></Route>
+            <Route path="ResiduoCreativo/tiendas" element={<Tiendas />}></Route>
+            <Route
+              path="ResiduoCreativo/nosotros"
+              element={<Nosotros />}
+            ></Route>
+            <Route
+              path="ResiduoCreativo/inicio-de-sesion"
+              element={<InicioSesion />}
+            ></Route>
 
             {/* Reigstros */}
             <Route
-              path="/registro-usuario"
+              path="ResiduoCreativo/registro-usuario"
               element={<RegistroUsuario />}
             ></Route>
             <Route
-              path="/registro-producto"
+              path="ResiduoCreativo/registro-producto"
               element={<RegistroProducto />}
             ></Route>
-            <Route path="/registrar-tienda" element={<RegistroTienda />} />
+            <Route
+              path="ResiduoCreativo/registrar-tienda"
+              element={<RegistroTienda />}
+            />
 
-            <Route path="/preguntas-frecuentes" element={<Preguntas />}></Route>
-            <Route path="/contacto" element={<Contacto />}></Route>
-            <Route path="/cuenta" element={<Emprendedor />}></Route>
-            <Route path="/pagos" element={<Pagos />}></Route>
+            <Route
+              path="ResiduoCreativo/preguntas-frecuentes"
+              element={<Preguntas />}
+            ></Route>
+            <Route
+              path="ResiduoCreativo/contacto"
+              element={<Contacto />}
+            ></Route>
+            <Route
+              path="ResiduoCreativo/cuenta"
+              element={<Emprendedor />}
+            ></Route>
+            <Route path="ResiduoCreativo/pagos" element={<Pagos />}></Route>
 
-            <Route path="/producto/:id" element={<Producto />} />
-            <Route path="/tienda/:id" element={<Tienda />} />
+            <Route path="ResiduoCreativo/producto/:id" element={<Producto />} />
+            <Route path="ResiduoCreativo/tienda/:id" element={<Tienda />} />
           </Routes>
         </Container>
       </main>

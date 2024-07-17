@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import imagenes from "../assets/all_product";
+import datos from "../assets/all_product";
 import sinImagen from "../assets/Productos/sin_imagen.png";
 
 import {
@@ -38,7 +38,7 @@ function CardTienda({ data, titulo }) {
                   <CardMedia
                     component="img"
                     alt={tienda.nombre}
-                    src={imagenes[index] ? imagenes[index].imagen : sinImagen}
+                    src={datos[index] ? datos[index].imagen : sinImagen}
                   />
                   <CardContent>
                     <Typography variant="h6">{tienda.nombre}</Typography>

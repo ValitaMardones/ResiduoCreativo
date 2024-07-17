@@ -115,7 +115,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
               </Link>
             </div>
             <div className="nav_usuario_registro">
-              <Link to="/registro" style={{ textDecoration: "none" }}>
+              <Link to="/registro-usuario" style={{ textDecoration: "none" }}>
                 Registrate
               </Link>
             </div>

@@ -37,7 +37,7 @@ function App() {
       <main>
         <Container>
           <Routes>
-            <Route path="/" element={<HomeGeneral />}></Route>
+            <Route path="/ResiduoCreativo" element={<HomeGeneral />}></Route>
             <Route path="/tiendas" element={<Tiendas />}></Route>
             <Route path="/nosotros" element={<Nosotros />}></Route>
             <Route path="/inicio-de-sesion" element={<InicioSesion />}></Route>

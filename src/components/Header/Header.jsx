@@ -26,7 +26,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
     <header>
       <nav className="nav">
         <div className="nav_logo">
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/ResiduoCreativo" style={{ textDecoration: "none" }}>
             <img className="logo" src={logo} alt="logo residuo creativo" />
           </Link>
         </div>
@@ -34,7 +34,7 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
           <ul className="nav_menu_list">
             <li className="nav_menu_item">
               <Link
-                to="/"
+                to="/ResiduoCreativo"
                 style={{ textDecoration: "none" }}
                 className="nav_menu_link"
               >
